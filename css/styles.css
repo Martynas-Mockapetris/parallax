@@ -1,0 +1,169 @@
+html, body {
+  font-family: "Open Sans", sans-serif, Arial;
+  height: auto;
+  padding: 0;
+  margin: 0; }
+
+h1, h4 {
+  font-weight: 500;
+  color: #cccccc; }
+
+hr {
+  width: auto;
+  max-width: 760px;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  border-width: 0px;
+  border-top: 1px solid #e1e1e1; }
+
+p {
+  width: auto;
+  max-width: 700px;
+  margin: 0px auto; }
+
+.header {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  background-image: url(../img/headerbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-attachment: fixed; }
+  .header .logo {
+    position: relative;
+    margin-top: 130px;
+    z-index: 1; }
+  .header h1, .header h4 {
+    color: black;
+    text-align: center;
+    padding: 0px;
+    margin: 0px auto; }
+  .header h1 {
+    font-weight: 800; }
+  .header h4 {
+    width: 332px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .header h4:before, .header h4:after {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%; }
+  .header h4:before {
+    right: 0.5em;
+    margin-left: -50%; }
+  .header h4:after {
+    left: 0.5em;
+    margin-right: -50%; }
+
+.smallBirds {
+  width: 500px;
+  height: 350px;
+  background-image: url(../img/birds.png);
+  background-repeat: no-repeat;
+  background-size: auto 350px;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  z-index: 2; }
+
+.bird {
+  width: 600px;
+  height: 200px;
+  background-image: url(../img/back-bird.png);
+  background-repeat: no-repeat;
+  background-size: auto 200px;
+  background-position: top center;
+  position: absolute;
+  left: 25%;
+  margin-top: 20px;
+  margin-left: -300px;
+  z-index: 2; }
+
+.container {
+  text-align: center;
+  position: relative;
+  height: 2000px;
+  margin: 0px auto;
+  padding: 0px; }
+
+.introduction .row {
+  margin: 0px auto;
+  padding: 10px; }
+
+.gallery {
+  max-width: 660px;
+  margin: 0px auto; }
+  .gallery figure {
+    width: 200px;
+    margin: 0px 10px 15px;
+    padding: 0px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; }
+    .gallery figure.is-showing {
+      opacity: 1;
+      transform: translateX(0px); }
+    .gallery figure img {
+      width: 200px;
+      height: auto;
+      display: block;
+      transform: scale(1);
+      transition: all 0.4s ease-in-out; }
+    .gallery figure:hover figcaption {
+      left: 0px; }
+    .gallery figure:hover img {
+      transform: scale(1.1); }
+  .gallery figcaption {
+    position: absolute;
+    bottom: 15px;
+    left: -120px;
+    background: black;
+    color: white;
+    padding: 2px 8px;
+    font-size: 11px;
+    transition: all 0.4s ease-in-out; }
+
+.teamDescrip .row {
+  padding: 10px;
+  margin: 0px auto; }
+
+.blog-post {
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden; }
+
+.row {
+  width: 660px;
+  margin: 0 auto; }
+
+.team {
+  width: 200px;
+  margin: 40px 10px;
+  padding: 10px 10px 20px;
+  border: 1px solid #e1e1e1;
+  background: white;
+  position: relative; }
+  .team img {
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in-out; }
+    .team img:hover {
+      border-radius: 50%; }
+
+.post-1 {
+  transform: translate(100px, 20px); }
+
+.post-2 {
+  z-index: 2;
+  transform: translateY(-20px); }
+
+.post-3 {
+  transform: translate(-100px, 20px); }
